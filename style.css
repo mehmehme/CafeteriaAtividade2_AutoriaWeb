@@ -1,0 +1,496 @@
+/* Estilo mobile first */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 90px 10px 10px; /* Ajuste o padding para evitar sobreposição */
+    background-color: #493c28; /* Cor de fundo */
+    font-family: Arial, sans-serif;
+  }
+
+  /* Barra de navegação */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #7a5945; /* Cor de fundo da barra */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(155, 139, 119, 0.479);
+    z-index: 1000;
+  }
+
+  .navbar .nav-title {
+    color: #461714;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .navbar .nav-links {
+    display: flex;
+    gap: 20px;
+    color: #461714;
+  }
+
+  .navbar .nav-links a {
+    color: #573c3c;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .navbar .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+  /* Seções do site */
+  .products-section, .cart-section {
+    margin-top: 90px; /* Ajusta para evitar sobreposição da navbar */
+    padding: 20px;
+  }
+
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Cards */
+  .card-style {
+    border: 3px solid #2e2411;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #b3966b;
+    width: 90%; /* Ajuste para caber melhor no mobile */
+    font-family: "Arial, sans-serif";
+  }
+
+  .image-style {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    height: auto;
+  }
+
+  .title-style {
+    margin: 16px 0 8px 0;
+    font-size: 18px; /* Ajustado para mobile */
+    color: #333;
+  }
+
+  .description-style {
+    margin: 8px 0;
+    color: #555;
+    font-size: 16px; /* Ajustado para mobile */
+  }
+
+  .ingredients-title-style {
+    margin: 8px 0;
+    font-size: 16px; /* Ajustado para mobile */
+    color: #333;
+  }
+
+  .ingredients-list-style {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .ingredient-item-style {
+    color: #555;
+    font-size: 14px; /* Ajustado para mobile */
+    margin: 4px 0;
+  }
+
+  .button-style {
+    background-color: #dfb88b;
+    color: rgb(48, 11, 11);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Botão ocupa toda a largura no mobile */
+  }
+
+  .button-style:hover {
+    background-color: #180101;
+  }
+
+  /* Estilo do carrinho */
+  .cart-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .cart-item button {
+    margin-left: 5px;
+  }
+
+  .finalize-button {
+    width: 100%; /* Botão de finalizar compra ocupa toda a largura */
+    background-color: #b3966b;
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .finalize-button:hover {
+    background-color: #461714;
+  }
+
+    /* Estilo geral do formulário de pagamento */
+  .payment-form {
+    background-color: #f9f9f9; /* Cor de fundo clara */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+    max-width: 400px;
+    margin: 20px auto; /* Centralizar o formulário */
+    font-family: Arial, sans-serif;
+  }
+
+  /* Título do formulário */
+  .payment-form h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  /* Estilo da lista de itens do carrinho */
+  .payment-form ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .payment-form li {
+    font-size: 16px;
+    color: #c4a689;
+    margin-bottom: 10px;
+  }
+
+  /* Campo de endereço */
+  .address-input {
+    width: 94.5%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #836858;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .address-input:focus {
+    border-color: #332212; /* Cor de borda ao focar */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 30, 0, 0.2); /* Efeito de sombra ao focar */
+  }
+
+  /* Seletor de pagamento */
+  .payment-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #332212;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .payment-select:focus {
+    border-color: #332212;
+    outline: none;
+    box-shadow: 0 0 5px rgba(44, 32, 20, 0.2);
+  }
+
+  /* Botão de finalizar compra */
+  .finalize-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Cor verde */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .finalize-button:hover {
+    background-color: #0e4b1b; /* Cor verde mais escura ao passar o mouse */
+  }
+
+  .finalize-button:active {
+    background-color: #8ae49f; /* Cor verde mais escura ao clicar */
+  }
+
+  .finalize-button:focus {
+    outline: none;
+  }
+}
+
+/* Estilo para telas maiores (telas de desktop) */
+@media screen and (min-width: 768px) {
+  /* Estilo geral do corpo para desktop */
+  body {
+    margin: 0;
+    padding: 30px; /* Menos padding que no mobile */
+    background-color: #493c28;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Barra de navegação */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Aumenta a altura da barra para desktop */
+    background-color: #7a5945;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 40px; /* Aumenta o padding para dar mais espaço */
+    box-shadow: 0 2px 5px rgba(155, 139, 119, 0.479);
+    z-index: 1000;
+  }
+
+  .navbar .nav-title {
+    color: #461714;
+    font-size: 28px; /* Aumenta o tamanho do título para desktop */
+    font-weight: bold;
+  }
+
+  .navbar .nav-links {
+    display: flex;
+    gap: 40px; /* Aumenta o espaçamento entre os links */
+  }
+
+  .navbar .nav-links a {
+    color: #573c3c;
+    text-decoration: none;
+    font-size: 20px; /* Aumenta o tamanho da fonte dos links */
+  }
+
+  .navbar .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+  /* Seções do site */
+  .products-section, .cart-section {
+    margin-top: 100px; /* Ajusta para evitar sobreposição da navbar */
+    padding: 40px;
+  }
+
+  .products-section {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; 
+  }
+
+  /* Cards */
+  .card-style {
+    border: 3px solid #2e2411;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #b3966b;
+    width: 80%; /* Ajusta a largura para exibir em três colunas */
+    font-family: "Arial, sans-serif";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .image-style {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    height: auto;
+  }
+
+  .title-style {
+    margin: 16px 0 8px 0;
+    font-size: 22px; /* Aumenta o tamanho da fonte para desktop */
+    color: #333;
+  }
+
+  .description-style {
+    margin: 8px 0;
+    color: #555;
+    font-size: 18px; /* Aumenta o tamanho da fonte para desktop */
+  }
+
+  .ingredients-title-style {
+    margin: 8px 0;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    color: #333;
+  }
+
+  .ingredients-list-style {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .ingredient-item-style {
+    color: #555;
+    font-size: 16px; /* Ajusta para desktop */
+    margin: 4px 0;
+  }
+
+  .button-style {
+    background-color: #dfb88b;
+    color: rgb(48, 11, 11);
+    border: none;
+    padding: 12px 24px; /* Aumenta o tamanho do botão */
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto; /* O botão não ocupa toda a largura */
+  }
+
+  .button-style:hover {
+    background-color: #180101;
+  }
+
+  /* Estilo do carrinho */
+  .cart-container {
+    padding: 30px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .cart-item button {
+    margin-left: 5px;
+  }
+
+  .finalize-button {
+    width: auto; /* O botão ocupa a largura necessária */
+    background-color: #b3966b;
+    color: #fff;
+    border: none;
+    padding: 12px 24px; /* Aumenta o tamanho do botão */
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .finalize-button:hover {
+    background-color: #461714;
+  }
+
+  /* Estilo geral do formulário de pagamento */
+  .payment-form {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Aumenta a largura para desktop */
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Título do formulário */
+  .payment-form h2 {
+    text-align: center;
+    font-size: 30px; /* Aumenta o título */
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  /* Estilo da lista de itens do carrinho */
+  .payment-form ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .payment-form li {
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    color: #c4a689;
+    margin-bottom: 10px;
+  }
+
+  /* Campo de endereço */
+  .address-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #836858;
+    border-radius: 4px;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+  }
+
+  .address-input:focus {
+    border-color: #332212;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 30, 0, 0.2);
+  }
+
+  /* Seletor de pagamento */
+  .payment-select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #332212;
+    border-radius: 4px;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+  }
+
+  .payment-select:focus {
+    border-color: #332212;
+    outline: none;
+    box-shadow: 0 0 5px rgba(44, 32, 20, 0.2);
+  }
+
+  /* Botão de finalizar compra */
+  .finalize-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .finalize-button:hover {
+    background-color: #0e4b1b;
+  }
+
+  .finalize-button:active {
+    background-color: #8ae49f;
+  }
+
+  .finalize-button:focus {
+    outline: none;
+  }
+}
